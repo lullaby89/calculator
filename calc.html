@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Designing a calculator using JavaScript</title>
+	<link href="calc style.css" type="text/css" rel="Stylesheet">  
+	<h1 style="text-align: center; color: purple; font-family: Geometrique"> My Very Own Calculator</h1>
+
+	<style type="text/css"></style>
+
+	<script src="calc.js"></script>
+
+</head>
+
+<body>
+	<div id="display">
+	
+		<table border="4px">
+			<tr>
+				<th colspan="4"><input id="text" type="textbox" name="numbers" size="30px"/></th>
+			</tr>
+
+			<tr>
+				<td colspan="4"><button id="clear" class="btn btn-warning" value="CLR" onclick="setValue(this)"><strong>CLR</strong></button></td>
+			</tr>
+
+			<tr>
+				<td><button class="btn number" value="7" onclick="setValue(this)"/><strong>7</strong></button></td>
+				<td><button class="btn number" value="8" onclick="setValue(this)"/><strong>8</strong></button></td>
+				<td><button class="btn number" value="9" onclick="setValue(this)"/><strong>9</strong></button></td>
+				<td><button class="btn operator" value="-" onclick="setValue(this)"/><strong>-</strong></button></td>
+			</tr>
+
+			<tr>
+				<td><button class="btn number" value="4" onclick="setValue(this)"/><strong>4</strong></button></td>
+				<td><button class="btn number" value="5" onclick="setValue(this)"/><strong>5</strong></button></td>
+				<td><button class="btn number" value="6" onclick="setValue(this)"/><strong>6</strong></button></td>
+				<td><button class="btn operator" value="*" onclick="setValue(this)"/><strong>*</strong></button></td>
+			</tr>
+
+			<tr>
+				<td><button class="btn number" value="1" onclick="setValue(this)"/><strong>1</strong></button></td>
+				<td><button class="btn number" value="2" onclick="setValue(this)"/><strong>2</strong></button></td>
+				<td><button class="btn number" value="3" onclick="setValue(this)"/><strong>3</strong></button></td>
+				<td><button class="btn operator" value="/" onclick="setValue(this)"/><strong>/</strong></button></td>
+			</tr>
+
+			<tr>
+				<td><button class="btn number" value="0" onclick="setValue(this)"/><strong>0</strong></button></td>
+				<td><button class="btn number" value="." onclick="setValue(this)"/><strong>.</strong></button></td>
+				<td><button id="enter" class="btn btn-primary" value="=" onclick="setValue(this)"/><strong>=</strong></button></td>
+				<td><button class="btn operator" value="+" onclick="setValue(this)"/><strong>+</strong></button></td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
